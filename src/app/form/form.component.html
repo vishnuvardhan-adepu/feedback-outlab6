@@ -1,12 +1,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <h2 style="text-align: left">FORM</h2>
-<p> name:
+<p> Name:
    <input [(ngModel)]="intialstudent.name" >
 </p>
-<p> email:
+<p> Email:
     <input [(ngModel)]="intialstudent.email" >
 </p>
-<div>feedback:
+<div>Feedback:
 <button class="btn">{{intialstudent.feedback}} </button>
 <div class="dropdown">
   <button class="btn" style="border-left:1px solid #0d8bf2">
@@ -19,8 +19,8 @@
   </div>
 </div>
 </div>
-<p> comments:
+<p> Comments:
     <input [(ngModel)]="intialstudent.comment" >
 </p>
 <button class="button" (click)="Submit()">Submit</button>
-<h3 style="color:red">{{errorMessage}}</h3>
+<h3 style="color:red">Message:{{errorMessage}}</h3>
